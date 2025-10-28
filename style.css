@@ -1,0 +1,143 @@
+:root {
+    --Montserrat-font: "Montserrat", sans-serif;
+    --Fraunces-font: "Fraunces", serif;
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+picture {
+    width: 50%;
+}
+
+picture img {
+    border-radius: 0.5em
+}
+
+.text-box {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 0.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+p {
+    font-family: var(--Montserrat-font);
+    font-size: 14px;
+    font-size: clamp(11px, 1vw, 14px);
+    color: var(--grey);
+    text-align: left;
+}
+
+#title {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: 500;
+    color: var(--grey);
+
+}
+
+h1,
+h2 {
+    font-family: var(--Fraunces-font);
+}
+
+h1 {
+    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: var(--green-500);
+}
+
+span {
+    font-size: .5em;
+    font-size: clamp(.3em, 2vw, .5em);
+    font-weight: 500;
+    font-style: normal;
+    font-family: var(--Montserrat-font);
+    text-decoration: line-through;
+}
+
+button {
+    font-family: var(--Montserrat-font);
+    background-color: var(--green-500);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    padding: 1em 2.4em;
+    font-size: 1rem;
+    font-size: clamp(0.1rem, 2vw, 1rem);
+    border: none;
+    border-radius: 1em;
+}
+
+button img {
+    width: 10%;
+}
+
+@media (max-width:900px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box {
+        justify-content: flex-end;
+        gap: 1em;
+        padding: 1.5rem;
+    }
+}
