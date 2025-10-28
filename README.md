@@ -26,8 +26,8 @@ A simple and elegant product preview card created with Flexbox and responsive st
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ayeshalatif1/ProductPreviewCard)
-- Live Site URL: [Add live site URL here](https://ayeshalatif1.github.io/ProductPreviewCard)
+- Solution URL: (https://github.com/ayeshalatif1/ProductPreviewCard)
+- Live Site URL: (https://ayeshalatif1.github.io/ProductPreviewCard)
 
 ## My process
 
