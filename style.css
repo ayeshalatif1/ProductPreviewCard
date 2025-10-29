@@ -17,6 +17,10 @@
 
 body {
     background-color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
 }
 
@@ -25,7 +29,6 @@ main {
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 20px;
 }
 
 section {
@@ -72,7 +75,7 @@ p {
     text-align: left;
 }
 
-#title {
+.title {
     text-transform: uppercase;
     letter-spacing: .3em;
     font-weight: 500;
@@ -133,11 +136,19 @@ button img {
     section {
         flex-direction: column;
         align-items: center;
+        width: 90%;
+        max-width: none;
     }
 
     .text-box {
         justify-content: flex-end;
         gap: 1em;
-        padding: 1.5rem;
+        padding: 2rem;
+    }
+    picture{
+        width: 80%;
+    }
+    .text-box{
+        width: 80%;
     }
 }
